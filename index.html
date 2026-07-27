@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>StandGuard Aquatics — City of Atlanta Pools</title>
+<title>StandGuard Aquatics — City of Atlanta Facilities</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <style>
  :root{--blue:#0000FF;--navy:#0A1657;--line:#e6e9f0;--muted:#64748b}
@@ -40,7 +40,7 @@
 <div class="app">
  <div class="top">
   <span class="badge"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#0000FF"/><g stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"><path d="M16 12v22"/><path d="M32 12v22"/><path d="M15 20h18"/><path d="M16 34l-4 4"/><path d="M32 34l4 4"/><path d="M20 12h8v6h-8z" fill="#fff" stroke="none"/></g></svg></span>
-  <div><h1>City of Atlanta Pools</h1><div class="sub">StandGuard Aquatics — 12 aquatic facilities · 2.5-mile radius</div></div>
+  <div><h1>City of Atlanta Facilities</h1><div class="sub">StandGuard Aquatics — 13 aquatic facilities · 2.5-mile radius</div></div>
   <button id="clrBtn" class="tbtn" style="display:none">◎ Clear radius</button>
  </div>
  <div class="body">
@@ -66,6 +66,7 @@ const FAC=[
  {n:10,name:'Candler Park',addr:'1500 McClendon Ave NE, Atlanta, GA 30307',lat:33.764917,lon:-84.336167},
  {n:11,name:'Mozley Park',addr:'1690 Martin Luther King Jr Dr SW, Atlanta, GA 30314',lat:33.751453,lon:-84.442305},
  {n:12,name:'Pittman Park',addr:'950 Garibaldi St SW, Atlanta, GA 30310',lat:33.729878,lon:-84.399143,note:'Closed for renovations'},
+ {n:13,name:'Tucson Trail Park',addr:'Tucson Trail SW, Atlanta, GA 30331',lat:33.689900,lon:-84.540700,note:'Splash pad — under construction, new this year'},
 ];
 const map=L.map('map',{scrollWheelZoom:true});
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
