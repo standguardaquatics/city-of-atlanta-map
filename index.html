@@ -95,7 +95,7 @@ function showRadius(f){
  const toggleOff=(activeN===f.n);
  if(activeCircle){map.removeLayer(activeCircle);activeCircle=null;activeN=null;}
  if(toggleOff){updateClr();return;}
- activeCircle=L.circle([f.lat,f.lon],{radius:2.5*MILE,color:'#0000FF',weight:2,opacity:.85,fillColor:'#0000FF',fillOpacity:.08}).addTo(map);
+ activeCircle=L.circle([f.lat,f.lon],{radius:2.5*MILE,color:'#0000FF',weight:3.5,opacity:.95,fillColor:'#0000FF',fillOpacity:.16}).addTo(map);
  activeN=f.n;
  map.fitBounds(activeCircle.getBounds(),{padding:[40,40]});
  markers[f.n].openPopup();
